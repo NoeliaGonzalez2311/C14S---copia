@@ -1,0 +1,135 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+.desc {
+  background-color: #d1891c;
+  padding: 5px 10px;
+}
+.titulo {
+  background-color: #00669f;
+  padding: 15px;
+  color: white;
+}
+header {
+  position: relative;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+}
+
+.conteiner-padre {
+  max-width: 620px;
+  margin: 100px auto 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.card {
+  width: 300px;
+  background-color: #f3f3f3;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.fondo {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+}
+.corazon {
+  color: red;
+  position: absolute;
+  top: 10px;
+  left: 10px; /* manda el corazon 10 pixeles a la izq y arriba */
+}
+.Imagenes {
+  position: relative;
+  width: 280px;
+  height: 220px; /* medidas de la caja */
+}
+.foto-personaje {
+  position: absolute; /* aca pongo la imagen superpuesta*/
+  top: 150px;
+  left: 90px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.texto {
+  text-align: center;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 10px 15px;
+}
+
+.cardboton {
+  color: white;
+  background-color: #00669f;
+  text-align: center;
+
+  padding: 10px 30px; /* 10 espaci ode arribza y abajo, y el 30 lo hace en el medio */
+  border: none;
+  text-decoration: none; /* saca la linea del boton del link */
+  display: inline-block; /* hace que el boton se comporte mas como caja */
+  margin-top: auto;
+  align-self: center;
+}
+
+@media (max-width: 600px) {
+  .conteiner-padre {
+    flex-direction: column; /* pone en columnas*/
+    /*flex-wrap: wrap; /*controla si los elementos pueden pasar a otra línea cuando no entran.*/
+    align-items: center;
+  }
+}
+
+.img-piepag {
+  width: 80px;
+  position: absolute;
+  right: 20px; /*lleva el logo a la derecha.*/
+}
+.botonmas {
+  width: 40px;
+  height: 40px; /*tamaño para que se agrende el circulo*/
+  border-radius: 50%;
+  border: none;
+  background-color: #00669f;
+  color: white;
+  font-size: 25px;
+  display: flex;
+  align-items: center; /*centra el + verticalmente.*/
+  justify-content: center; /*centra horizontalmente*/
+}
+
+.contenedor-boton {
+  position: fixed;
+  right: 15px;
+  top: 50%;
+  z-index: 10;
+}
+
+main {
+  position: relative;
+}
+footer {
+  background-color: #00669f;
+  color: white;
+  margin-top: 50px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
